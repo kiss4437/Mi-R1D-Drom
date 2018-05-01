@@ -11,7 +11,7 @@ echo "#############################################################"
 if [ -f "/etc/init.d/drcom" ]; then
 	rm -f /etc/init.d/drcom
 fi
-curl -o /etc/init.d/drcom https://github.com/kiss4437/Mi-R1D-Drom/raw/master/drcom_init.d
+curl -o /etc/init.d/drcom https://raw.githubusercontent.com/kiss4437/Mi-R1D-Drom/master/drcom_init.d
 chmod +x /etc/init.d/drcom
 ln -s /etc/init.d/drcom /bin/drcom
 
@@ -20,8 +20,8 @@ if [ ! -d "/usr/Drcom" ]; then
   mkdir -p /usr/Drcom
 fi
 rm -rf /usr/Drcom/*
-curl -o /usr/Drcom/drcom  https://github.com/kiss4437/Mi-R1D-Drom/raw/master/drcom
-curl -o /usr/Drcom/drcom.conf  https://github.com/kiss4437/Mi-R1D-Drom/raw/master/drcom.conf
+curl -o /usr/Drcom/drcom https://raw.githubusercontent.com/kiss4437/Mi-R1D-Drom/master/drcom
+curl -o /usr/Drcom/drcom.conf https://raw.githubusercontent.com/kiss4437/Mi-R1D-Drom/master/drcom.conf
 chmod +x /usr/Drcom/drcom
 chmod +x /usr/Drcom/drcom.conf
 
