@@ -19,7 +19,6 @@ stop() {
 
 restart() {
     stop && start
-	echo "程序已重新启动"
 }
 
 
