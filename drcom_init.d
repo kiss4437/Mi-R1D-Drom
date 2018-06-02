@@ -9,14 +9,17 @@ START=25
 
 start() {
     service_start /usr/Drcom/drcom -m dhcp -c /usr/Drcom/drcom.conf -d -e
+	echo "程序已经启动"
 }
 
 stop() {
     service_stop /usr/Drcom/drcom
+	echo "程序已经停止"
 }
 
 restart() {
     stop && start
+	echo "程序已重新启动"
 }
 
 
